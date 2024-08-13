@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Registro-NODESS-UTA</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .auth-form-light {
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 400px; /* Limita el ancho máximo del formulario */
+    }
+    .brand-logo img {
+      width: 100px;
+      height: auto;
+    }
+    .btn-warning {
+      background-color: #ffc107;
+      border-color: #ffc107;
+    }
+    .btn-warning:hover {
+      background-color: #e0a800;
+      border-color: #d39e00;
+    }
+    .auth-form-btn {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .text-primary {
+      color: #007bff;
+    }
+    .text-primary:hover {
+      text-decoration: underline;
+    }
+    .font-weight-light {
+      font-weight: 300;
+    }
+    .mt-4 {
+      margin-top: 1.5rem !important;
+    }
+    .mb-4 {
+      margin-bottom: 1.5rem !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+    <div class="brand-logo text-center mb-4">
+      <img src="img/uta.jpg" alt="logo" class="img-fluid">
+    </div>
+    <h4 class="text-center mb-4">Nuevo usuario?</h4>
+    <h6 class="font-weight-light text-center mb-4">Regístrate para que puedas acceder al sistema</h6>
+    <form class="pt-3" method="POST" action="">
+      <div class="form-group">
+        <select class="form-control form-control-lg" id="puesto" name="puesto" required>
+          <option selected>Puesto</option>
+          <option value="1">Jefe de Área</option>
+          <option value="2">Secretaria</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control form-control-lg" id="apellido" placeholder="Apellidos P/M" name="apellido" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control form-control-lg" id="username" placeholder="Username" name="username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control form-control-lg" id="contrasena" placeholder="Password" name="contrasena" required>
+      </div>
+      <div class="mt-4">
+        <button class="btn btn-warning btn-block btn-rounded auth-form-btn" type="submit">REGISTRO</button>
+      </div>
+      <div class="text-center mt-4 font-weight-light">
+        ¿Ya tienes cuenta? <a href="index.html" class="text-primary">Inicia sesión</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
